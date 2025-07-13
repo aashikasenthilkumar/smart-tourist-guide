@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard - Smart Tourist Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <div class="container">
+    <h2>Welcome, <span id="user"></span></h2>
+    <button onclick="logout()" class="logout-btn">Logout</button>
+
+    <h3>Add a Tourist / Native Place</h3>
+    <input type="text" id="placeName" placeholder="Place Name" />
+    <input type="text" id="description" placeholder="Description" />
+    <input type="text" id="location" placeholder="Google Maps Link" />
+    <button onclick="addPlace()">Add Place</button>
+
+    <h3>Search</h3>
+    <input type="text" id="search" oninput="showPlaces()" placeholder="Search places..." />
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
